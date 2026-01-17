@@ -1,92 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ison Fit | Gimnasio</title>
+
+    <meta name="description"
+        content="Ison Fit Gym: planes accesibles, entrenadores certificados y ambiente motivador. Inscríbete hoy por WhatsApp.">
+
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 
 <body>
 
-    <header>
-        <nav class="menu desktop">
+<script>
+const telefono = "573234107526"; // CAMBIA por el número real del gym
 
-            <div><a href="index.html"><img
-                        src="assets/148304791-fitness-logo-design-template-design-for-gym-and-fitness-club.jpg"
-                        alt=""></a></div>
+function whatsappPlan(plan, precio) {
+    const mensaje = `Hola 👋
+Vi la página de ISION FIT 💪
 
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">World Gym Go</a></li>
-                <li><a href="#">Promociones</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li id="Inscribete"><a href="#">¡Incribete ya!</a></li>
-            </ul>
+Quiero inscribirme al ${plan}
+💰 Precio: $${precio}
 
+¿Me puedes contar horarios y promociones?`;
+
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+}
+</script>
+
+<header>
+    <nav class="menu desktop">
+        <div>
+            <a href="index.html">
+                <img src="assets/logotipo_dia.jpeg" alt="Logo Ison Fit">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li id="Inscribete">
+                <a onclick="whatsappPlan('Inscripción general', 'Consultar')">
+                    ¡Inscríbete ya!
+                </a>
+            </li>
+        </ul>
     </nav>
 
-        <nav class="menu mobile">
+    <nav class="menu mobile">
+        <div>
+            <img src="assets/logotipo_dia.jpeg" alt="Logo Ison Fit">
+        </div>
 
-      <div><a href="index.html"><img src="assets/148304791-fitness-logo-design-template-design-for-gym-and-fitness-club.jpg" alt=""></a></div>
-
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-dumbbell"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-tag"></i></a></li>
-                <li><a href="#"><i class="fa-regular fa-phone"></i></a></li>
-                <li id="Inscribete"><a href="#"><i class="fa-solid fa-sort-down"></i></a></li>
-            </ul>
-
+        <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-dumbbell"></i></li>
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li id="Inscribete"><i class="fa-solid fa-sort-down"></i></li>
+        </ul>
     </nav>
+</header>
 
-    </header>
+<div id="fondo">
+    <img src="assets/fondo_1.jpeg" alt="Gimnasio Ison Fit">
+</div>
+<br><br>
+<h2>Elige tu plan y empieza a transformar tu cuerpo hoy 💪</h2>
+<p>Sin contratos largos · Atención personalizada · Resultados reales</p>
 
-    <div id="fondo"></div>
-    <br><br><br><br>
+<section id="planes">
 
-    <h2>Elige tu plan y <span style="color: blue;">entrena ya</span></h2>
-    <br><br>
-    <section id="planes">
-
-        <br><br>
-
-        <div class="plan semanal">
-            <h3>Plan semanal </h3><br>
-            <p>Puedes entrena durante una semana en nuestra sede</p>
-            <p class="price">por tan solo $20.000 <br><br></p>
-            <a href="#" class="btn">¡Inscríbete ya!</a>
-        </div>
-        <div class="plan quincenal">
-            <h3>Plan quincenal </h3><br>
-            <p>Puedes entrena durante dos semana en nuestra sede</p>
-            <p class="price">por tan solo $40.000 <br><br></p>
-            <a href="#" class="btn">¡Inscríbete ya!</a>
-        </div>
-
-        <div class="plan mensual">
-            <h3>Plan mensual </h3><br>
-            <p>Puedes entrena durante 1 mes en nuestra sede</p>
-            <p class="price">por tan solo $70.000 <br><br></p>
-            <a href="#" class="btn">¡Inscríbete ya!</a>
-        </div>
-
-        <div class="plan añual">
-            <h3>Plan añual </h3><br>
-            <p>Puedes entrena durante 1 añual en nuestra sede</p>
-            <p class="price">por tan solo $800.000 <br><br></p>
-            <a href="#" class="btn">¡Inscríbete ya!</a>
-        </div>
-    </section>
+    <div class="plan">
+        <h3>Plan semanal</h3>
+        <p class="duracion">
+  <i class="fa-solid fa-calendar-days"></i> Duración: 7 días
+</p>
+<ul class="plan-beneficios">
+  <li><i class="fa-solid fa-check"></i> Acceso completo al gimnasio</li>
+  <li><i class="fa-solid fa-check"></i> Uso de máquinas y pesas</li>
+  <li><i class="fa-solid fa-check"></i> Asesoría básica</li>
+  <li><i class="fa-solid fa-check"></i> Ambiente seguro</li>
+</ul>
 
 
+        <p class="price"> $20.000</p>
+        <button onclick="whatsappPlan('Plan semanal', 20000)" class="btn">
+            ¡Inscríbete ya!
+        </button>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Fray Mercado. Todos los derechos reservados.</p>
-    </footer>
+    <div class="plan">
+        <h3>Plan quincenal</h3>
+        <p class="duracion">
+  <i class="fa-solid fa-calendar-days"></i> Duración: 14 días
+</p>
+<ul class="plan-beneficios">
+  <li><i class="fa-solid fa-check"></i> Acceso completo al gimnasio</li>
+  <li><i class="fa-solid fa-check"></i> Uso de máquinas y pesas</li>
+  <li><i class="fa-solid fa-check"></i> Asesoría básica</li>
+  <li><i class="fa-solid fa-check"></i> Ambiente seguro</li>
+</ul></p>
+
+
+
+        <p class="price">$40.000</p>
+        <button onclick="whatsappPlan('Plan quincenal', 40000)" class="btn">
+            ¡Inscríbete ya!
+        </button>
+    </div>
+
+<div class="plan destacado">
+  <span class="badge">Más popular</span>
+  <h3>Plan mensual</h3>
+
+  <p class="duracion">
+    <i class="fa-solid fa-calendar-days"></i> 30 días
+  </p>
+
+  <ul class="plan-beneficios">
+    <li><i class="fa-solid fa-check"></i> Acceso ilimitado</li>
+    <li><i class="fa-solid fa-check"></i> Rutina personalizada</li>
+    <li><i class="fa-solid fa-check"></i> Asesoría básica</li>
+    <li><i class="fa-solid fa-check"></i> Uso de todas las áreas</li>
+  </ul>
+
+  <p class="price">$70.000</p>
+
+  <p class="promesa">Resultados desde el primer mes 💪</p>
+
+  <button class="btn" onclick="whatsappPlan('Plan mensual', 70000)">
+    ¡Inscríbete ya!
+  </button>
+</div>
+
+
+    <div class="plan">
+        <h3>Plan anual</h3>
+        <p class="duracion">
+  <i class="fa-solid fa-calendar-days"></i> Duración: 365 días
+</p>
+<ul class="plan-beneficios">
+  <li><i class="fa-solid fa-check"></i> Acceso completo al gimnasio</li>
+  <li><i class="fa-solid fa-check"></i> Uso de máquinas y pesas</li>
+  <li><i class="fa-solid fa-check"></i> Asesoría básica</li>
+  <li><i class="fa-solid fa-check"></i> Ambiente seguro</li>
+</ul>
+
+
+        <p class="price"> $800.000</p>
+        <button onclick="whatsappPlan('Plan anual', 800000)" class="btn">
+            ¡Inscríbete ya!
+        </button>
+    </div>
+
+</section>
+
+<a href="https://wa.me/573234107526" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+<br><br>
+<section class="beneficios">
+    <h2>¿Por qué ISION FIT?</h2>
+    <ul>
+        <li>✔ Entrenadores certificados</li>
+        <li>✔ Equipos modernos</li>
+        <li>✔ Planes accesibles</li>
+        <li>✔ Ambiente motivador</li>
+    </ul>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contáctanos 📲</h2>
+  <p>Escríbenos y recibe información inmediata</p>
+
+  <div class="contacto-info">
+    <p><i class="fa-solid fa-location-dot"></i> Orihueca Zona Bananera, Colombia</p>
+    <p><i class="fa-solid fa-clock"></i> Lunes a Viernes · 5:00 AM – 9:00 PM</p>
+    <p><i class="fa-solid fa-phone"></i> +57 323 410 7526</p>
+  </div>
+</section>
+
+<br>
+<section class="cta-final">
+    <h2>Empieza hoy 💪</h2>
+    <p>Escríbenos y reserva tu cupo ahora</p>
+    <button onclick="whatsappPlan('Inscripción general', 'Consultar')" class="btn">
+        Hablar por WhatsApp
+    </button>
+</section>
+
+
+
+<footer>
+    <p>&copy; 2025 Fray Mercado. Todos los derechos reservados.</p>
+</footer>
 
 </body>
-
 </html>
