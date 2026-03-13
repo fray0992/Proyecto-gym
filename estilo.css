@@ -90,33 +90,83 @@ header {
     color: white;
 }
 
+
 #Inscribete:hover {
-  background: #005eff;
-  color: #fff;
-  box-shadow: 0 0 45px #005eff;
+    transform: scale(1.05);
+}
+
+#icono{
+    color: black;
 }
 
 
 /* =========================
    MOBILE MENU
 ========================= */
-.mobile {
-    display: none;
+
+.mobile{
+    display:none;
 }
 
-@media (max-width: 768px) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: flex;
-    }
+@media(max-width:700px){
 
-    .menu ul li {
-        margin-left: 12px;
-    }
+.desktop{
+    display:none;
 }
 
+.mobile{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding: 30px 30px;
+}
+
+#logotipo_mobile{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.icono{
+    font-size:28px;
+    cursor:pointer;
+}
+
+#barras{
+    display:none;
+}
+
+.menu-mobile{
+    position:fixed;
+    top:70px;
+    right:-100%;
+    width:250px;
+    height:100vh;
+    background:#0f172a;
+    transition:0.4s;
+}
+
+#barras:checked ~ .menu-mobile{
+    right:0;
+}
+
+.elementos-mobile{
+    list-style:none;
+    padding:20px;
+}
+
+.elementos-mobile li{
+    padding:15px 0;
+}
+
+.elementos-mobile li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+}
 /* =========================
    HERO
 ========================= */
@@ -132,6 +182,7 @@ header {
     object-fit: cover;
     filter: brightness(0.75);
 }
+
 
 /* =========================
    TITULOS
@@ -229,6 +280,105 @@ p {
 /* =========================
    BOTONES
 ========================= */
+.bn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+.beneficios {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.beneficios ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.beneficios li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+.cta-final {
+    background: linear-gradient(135deg, var(--dark), #020617);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-final p {
+    color: #cbd5f5;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background: #25D366;
+    color: white;
+    font-size: 30px;
+    padding: 16px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+/* animación */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: var(--dark);
+    color: #cbd5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* =========================
+   prueda button
+========================= */
 .btn {
   letter-spacing: 0.1em;
   padding: 10px 30px;
@@ -301,70 +451,4 @@ p {
 .btn:hover i::after {
   width: 20px;
   left: 80%;
-}
-
-
-/* =========================
-   BENEFICIOS
-========================= */
-.beneficios {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.beneficios ul {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.beneficios li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
-
-/* =========================
-   CTA FINAL
-========================= */
-.cta-final {
-    background: linear-gradient(135deg, var(--dark), #020617);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.cta-final p {
-    color: #cbd5f5;
-    margin-bottom: 20px;
-}
-
-/* =========================
-   WHATSAPP FLOAT
-========================= */
-.whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    background: var(--success);
-    color: white;
-    font-size: 28px;
-    padding: 15px;
-    border-radius: 40%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    z-index: 200;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-    background: var(--dark);
-    color: #cbd5f5;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
-
-  margin: 0;
 }
