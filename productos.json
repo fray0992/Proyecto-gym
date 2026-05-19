@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Oversize",
+    "precio": 50000,
+    "imagen": "assets/img/productos/oversite1.webp",
+    "seccion": "Hombre"
+  },
+
+  {
+    "id": 2,
+    "nombre": "Top Deportivo",
+    "precio": 45000,
+    "imagen": "assets/img/productos/mujer1.webp",
+    "seccion": "Mujer"
+  },
+
+  {
+    "id": 3,
+    "nombre": "Camiseta Real Madrid",
+    "precio": 90000,
+    "imagen": "assets/img/productos/Real madrid.webp",
+    "seccion": "Deporte"
+  },
+
+{
+    "id": 4,
+    "nombre": "Camiseta Oversize",
+    "precio": 50000,
+    "imagen": "assets/img/productos/oversite1.webp",
+    "seccion": "Hombre"
+  },
+
+  {
+    "id": 5,
+    "nombre": "Top Deportivo",
+    "precio": 45000,
+    "imagen": "assets/img/productos/mujer1.webp",
+    "seccion": "Mujer"
+  },
+
+  {
+    "id": 6,
+    "nombre": "Camiseta Real Madrid",
+    "precio": 90000,
+    "imagen": "assets/img/productos/Real madrid.webp",
+    "seccion": "Deporte"
+  },
+
+    {
+    "id": 1,
+    "nombre": "Camiseta Oversize",
+    "precio": 50000,
+    "imagen": "assets/img/productos/oversite1.webp",
+    "seccion": "Hombre"
+  },
+
+  {
+    "id": 2,
+    "nombre": "Top Deportivo",
+    "precio": 45000,
+    "imagen": "assets/img/productos/mujer1.webp",
+    "seccion": "Mujer"
+  },
+
+  {
+    "id": 3,
+    "nombre": "Camiseta Real Madrid",
+    "precio": 90000,
+    "imagen": "assets/img/productos/Real madrid.webp",
+    "seccion": "Deporte"
+  },
+
+    {
+    "id": 1,
+    "nombre": "Camiseta Oversize",
+    "precio": 50000,
+    "imagen": "assets/img/productos/oversite1.webp",
+    "seccion": "Hombre"
+  },
+
+  {
+    "id": 2,
+    "nombre": "Top Deportivo",
+    "precio": 45000,
+    "imagen": "assets/img/productos/mujer1.webp",
+    "seccion": "Mujer"
+  },
+
+  {
+    "id": 3,
+    "nombre": "Camiseta Real Madrid",
+    "precio": 90000,
+    "imagen": "assets/img/productos/Real madrid.webp",
+    "seccion": "Deporte"
+  },
+
+      {
+    "id": 1,
+    "nombre": "Camiseta ",
+    "precio": 50000,
+    "imagen": "assets/img/productos/gym1.1.jpg",
+    "seccion": "Hombre"
+  }
+]
+
+
+
